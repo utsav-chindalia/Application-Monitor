@@ -98,6 +98,7 @@ while 1:
 						pname=proc.name()
 						p.terminate()
 						logging.info("Killed:"+str(pid)+" "+pname)
+						ef=1
 					except:
 						print("Error killing")
 						logging.error("Error Killing:"+str(proc.pid)+" "+proc.name())
